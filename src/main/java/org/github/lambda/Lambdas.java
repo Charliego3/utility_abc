@@ -152,12 +152,12 @@ public class Lambdas {
 
     /**
      * Example:
-     * {@code uncheck(() -> System.out.println(Class.forName("Invalid")));}
+     * {@code run(() -> System.out.println(Class.forName("Invalid")));}
      *
      * @param runnable Runnable
      * @param <E>      异常类型
      */
-    public static <E extends Throwable> java.lang.Runnable uncheck(Runnable<E> runnable) {
+    public static <E extends Throwable> java.lang.Runnable run(Runnable<E> runnable) {
         return () -> {
             if (Objects.isNull(runnable)) {
                 return;
