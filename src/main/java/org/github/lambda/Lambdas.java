@@ -9,7 +9,7 @@ public class Lambdas {
 
     /**
      * Example:
-     * .map(uncheck(name -> System.out.println(Class.forName(name))));
+     * {@code .map(uncheck(name -> System.out.println(Class.forName(name))));}
      *
      * @param consumer 消费者模型
      * @param <T>      入参类型
