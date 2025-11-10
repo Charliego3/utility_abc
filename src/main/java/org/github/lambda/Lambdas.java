@@ -8,7 +8,7 @@ import java.util.Objects;
 public class Lambdas {
 
     /**
-     * Example: <br/>
+     * Example:
      * .map(uncheck(name -> System.out.println(Class.forName(name))));
      *
      * @param consumer 消费者模型
@@ -27,7 +27,7 @@ public class Lambdas {
     }
 
     /**
-     * Example: <br/>
+     * Example:
      * {@code .forEach(uncheck((clazz, method) -> System.out.println(clazz.getDeclaredMethod(method).toString())));}
      *
      * @param consumer 双消费者模型
@@ -47,7 +47,7 @@ public class Lambdas {
     }
 
     /**
-     * Example: <br/>
+     * Example:
      * {@code .map(uncheck(Class::forName));}
      *
      * @param function 函数模型
@@ -68,7 +68,7 @@ public class Lambdas {
     }
 
     /**
-     * Example: <br/>
+     * Example:
      * {@code .map(uncheck((clazz, method) -> clazz.getDeclaredMethod(method)));}
      *
      * @param function 双函数模型
@@ -90,7 +90,7 @@ public class Lambdas {
     }
 
     /**
-     * Example: <br/>
+     * Example:
      * {@code .filter(test(name -> Objects.nonNull(Class.forName(name))));}
      *
      * @param predicate 断言模型
@@ -110,7 +110,7 @@ public class Lambdas {
     }
 
     /**
-     * Example: <br/>
+     * Example:
      * {@code .filter(test((clazz, method) -> Objects.nonNull(clazz.getDeclaredMethod(method))));}
      *
      * @param predicate 双断言模型
@@ -131,7 +131,7 @@ public class Lambdas {
     }
 
     /**
-     * Example: <br/>
+     * Example:
      * {@code .map(uncheck(() -> Class.forName("Invalid")));}
      *
      * @param supplier 提供者模型
@@ -151,7 +151,7 @@ public class Lambdas {
     }
 
     /**
-     * Example: <br/>
+     * Example:
      * {@code uncheck(() -> System.out.println(Class.forName("Invalid")));}
      *
      * @param runnable Runnable
