@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>io.github.charliego3</groupId>
-    <artifactId>lambdas</artifactId>
+    <artifactId>ac</artifactId>
     <version>1.0.1</version>
     <packaging>jar</packaging>
 
